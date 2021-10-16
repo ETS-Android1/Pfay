@@ -1,6 +1,7 @@
+<p align = "center"> <img src="images/logo.png"> </p>
 # <p align="center"> **PFAY: Decentralized biometric payment system**
 
-# <span style="color:#4F5CBE"> 1. Problem statement: 
+# <span style="color:#4F5CBE"> 1. Problem statement:
 
 The transaction value for the Global Digital Payments Market was USD 5.44 trillion in 2020, and it is projected to be worth USD 11.29 trillion by 2026 by Berkshire&#39;s analysts, registering a CAGR of 11.21% during the period of 2021-2026. This demand for cashless payments was driven by greater convenience, favorable government policies, and evolving consumer behavior.
 
@@ -10,7 +11,7 @@ Along this rapid growth outlines a cyber-security concern for the usage of such 
 
 At the user level, specifically in the streaming and digital content creation industry, we see some inefficiency and obscurity in **donation** and **fundraising,** whereby middlemen take a hefty cut of overall earning, the profits are not publicly known and verified by users. In addition, a cost-effective and trusted solution for small amount transactions between family and friends using biometric authentication should be convenient
 
-So our solution is to implement a blockchain ledger integrated with a biometric authentication system to ensure user data privacy, also offering ease of use for transacting and authenticating. This system should be able to efficiently transact digital goods by using biometric authentication while keeping all of the users&#39; data securely on their devices.
+So our solution is to implement a blockchain ledger integrated with a biometric authentication system to ensure user data privacy, also offering ease of use for transacting and authenticating. This system should be able to efficiently transact digital goods by using biometric authentication while keeping all of the users&#39; data securely on their devices. Especially, our system allow user to pay by scanning other people face. This would be extremely convenient method to donate for content creator, streamer, or sending money to friends and family members.
 
 # <span style="color:#4F5CBE"> 2. Solution and advantages:
 
@@ -45,38 +46,46 @@ Once the privatized updates reach the proxy network, these are stripped of their
 **&nbsp;&nbsp;&nbsp; Server: <br>**
 At the very beginning, the server randomly initializes an item matrix, which constitutes the global part of the shared model. This is shipped to all the clients to initiate the federated learning process in epoch 0. At each epoch, once enough privatized gradient updates reach the server, they are aggregated together to reconstruct a global item matrix update ∇V. This is used to compute an updated item matrix V′, which is then shipped to each client to initiate the next federated learning epoch.
 
-  **ii. Model Architecture:** FaceNet with MTCNN for input processing. (các bro)
+  **ii. Model Architecture:** FaceNet with MTCNN for input processing: Input &rarr; MTCNN &rarr; FaceNET &rarr; 512 features output vector.
 
   **iii. The blockchain ledger:** Refer to future development. Plan to use existing resources in ETH&#39;s ecosystem. <br>
-**Due to time constraint of the hackathon, only a prototype for face recognition system is being developed. In the future, the ledger along with all functionalities might be completed and the apps can be deployed for community usage. Currently, we plan to have a blockchain build on top of ETH and utilize their existing ecosystem (**Golem:** utilizing, scaling up computing system; **Raiden:** transaction and multi-party payments; **Gnosis:** market analysis and trading platforms)**
+** *Due to time constraint of the hackathon, only a prototype for face recognition system is being developed. In the future, the ledger along with all functionalities might be completed and the apps can be deployed for community usage. Currently, we plan to have a blockchain build on top of Ethereum and utilize their existing ecosystem (**Golem:** utilizing, scaling up computing system; **Raiden:** transaction and multi-party payments; **Gnosis:** market analysis and trading platforms)* **
 
 ### <span style="color:#2AB7B4"> c. Functions and requirements:
-  1. **An effective in-device machine-learning algorithm** that can accurately identify users by faceID, while in the meantime, keeping all data secure.
-  2. **The MVP** should be able to recognize human faces and have a database system to store save the feature output vector.
-  3. **MFA (multi-factor authentication)**: Along with FaceID, touchID, passcode, pin, or registered devices can be used as extra factors to create a practically impenetrable system.
-  4. **Referral system:** while scaling up, we believe giving a reward by issuing and giving a token would be a logical move to incentivize more people to join our network. This also helps create an active community and many potential services. Moreover, we think additional machine learning problems can come up as more demand, services are needed.
+  1. **Payment methods:** pay by usual methods (wallet address, QR codes), and especially can pay by scanning face if user is registered (using biometrics ID).
+  2. **Machine learning algorithm:** can accurately identify users by faceID, need to research on aggregation methods and communication efficiency.
+  3. **The MVP:** should be able to recognize human faces, allow user to use all payment methods, and have a working database system.
+  4. **MFA (multi-factor authentication)**: Along with FaceID, touchID, passcode, pin, or registered devices can be used as extra factors to create a practically impenetrable system.
+  5. **Referral system:** while scaling up, we believe giving a reward by issuing a token would be a logical move to incentivize more people to join our network.
+  6. **Infrastructure:** Once the network and machine learning workflow are established, many potential problems could come as demand for different kind of services would appear. This would open more opportunity and challenge for applying deep learning technologies. A few we can think of now is insurance, investment management, and on-demand application.
  
 ### <span style="color:#2AB7B4"> d. What we offer:
 
-  1. **Globalization:** Thanks to the sharing of computing resources, scalability is achievable and there should be little difference between geographical area once our network we achieve a certain scale.
-  2. **Secure:** Blockchain and multi-factor authentication.
-  3. **Privacy:** Source codes, machine learning models are open sources so it is eliminated all trust issues. In addition, users&#39; data security can be achieved by masking before being sent to the server for aggregation.
-  4. **Simplicity:** It&#39;s as simple as opening your own smartphone with faceID, but now you have access to all banking services. And it&#39;s extremely quick
+  1. **Globalization and performance:** Thanks to blockchain, we can share computing resources, reduce duplicate records keeping, and eliminate the need for financial institution to verify transaction.
+  2. **Secure:** Achieved with blockchain and multi-factor authentication.
+  3. **Privacy:** Source codes and machine learning models are open sources so it eliminates all trust issues. In addition, users&#39; data security can be achieved by federated learning method.
+  4. **Simplicity:** It&#39;s as simple as opening your own smartphone with faceID, but now you have access to all banking services.
+  5. **Multiple services:** Other services using machine learning can be fulfilled by this approach.
 
 # <span style="color:#4F5CBE"> 3. Challenge and competition:
 
 The Digital Payments Market is moderately concentrated. The competitive rivalry in the market studied is moderate, as a good number of players prevail. Despite the existence of several companies in the market studied, firms are required to keep innovating their products, in order to gain a sustainable competitive edge over their rivals and provide product differentiation.
 
-There are many predecessors in the digital payment industry, with large-scale investment and funding for a variety of projects. To name a few competitors:
+In addition, here are many predecessors in the digital payment industry, with large-scale investment and funding for a variety of projects. To name a few competitors:
 
 - Google Pay
 - Visa 
 - Paypal
 
+However, we believe our approach would benefit from the rapid development of the blockchain sector as well as machine learning technologies. Besides, though biometrics authentication is widely applied, the idea of paying by using biometrics ID on blockchain is relatively new and exciting.
+ 
+**Regarding future challenges, we think there will be many things needed to improves:**
+- **Machine learning algorithm:** our FaceID for the prototype needs to improve as it currently only captures 2D input features, we wish to enhance the model to capture more advanced features such as depth map, multi-pose representations (for users who wear glasses, beards, or makeup). <br>
+- **Database:** Requirements are robust and elastic, as we want performance and scalability in the future <br>
+- **Ledger:** 
+- **Incentive mechanism:** We think of issuing a token, giving sign up, referral, and resources contributing reward. <br>
 
-
-
-# <span style="color:#4F5CBE"> 4. Future Roadmap:
+# <span style="color:#4F5CBE"> 4. Roadmap: To be decide in the future.
 
 # References: <br>
   https://brave.com/federated-learning/ <br>
@@ -85,3 +94,4 @@ There are many predecessors in the digital payment industry, with large-scale in
   https://towardsdatascience.com/facial-recognition-login-system-using-deep-learning-reactjs-61bff981eb74 <br>
   https://heartbeat.comet.ml/deploying-pytorch-and-keras-models-to-android-with-tensorflow-mobile-a16a1fb83f2 <br>
   https://bps.money/?fbclid=IwAR0A5mqqFhycuMzl0mwKlQ8E9XDAAREiXwcRIfShnRLKCdUZ0td43r3OrNI <br>
+****
