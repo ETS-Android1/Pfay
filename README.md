@@ -1,4 +1,5 @@
  <p align = "center"> <img src="images/logo.png"> </p>
+ 
 # <p align="center"> PFAY: Decentralized biometric payment system
 
 # <span style="color:#4F5CBE"> 1. Problem statement:
@@ -82,7 +83,7 @@ However, we believe our approach would benefit from the rapid development of the
 **Regarding future challenges, we think there will be many things needed to improves:**
 - **Machine learning algorithm:** our FaceID for the prototype needs to improve as it currently only captures 2D input features, we wish to enhance the model to capture more advanced features such as depth map, multi-pose representations (for users who wear glasses, beards, or makeup). <br>
 - **Database:** Requirements are robust and elastic, as we want performance and scalability in the future <br>
-- **Ledger:** 
+- **Ledger:** Requires to be fast, can be build on top of Ethereum to utilize their smart contracts and current eco-system.
 - **Incentive mechanism:** We think of issuing a token, giving sign up, referral, and resources contributing reward. <br>
 
 # <span style="color:#4F5CBE"> 4. Roadmap: To be decide in the future.
