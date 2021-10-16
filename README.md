@@ -49,7 +49,7 @@ At the very beginning, the server randomly initializes an item matrix, which con
   **ii. Model Architecture:** FaceNet with MTCNN for input processing. (các bro)
 
   **iii. The blockchain ledger:** Refer to future development. Plan to use existing resources in ETH&#39;s ecosystem. <br>
-**\*\*** _Due to time constraint of the hackathon, only a prototype for face recognition system is being developed. In the future, the ledger along with all functionalities might be completed and the apps can be deployed for community usage. Currently, we plan to have a blockchain build on top of ETH and utilize their existing ecosystem (**Golem:** utilizing, scaling up computing system; **Raiden:** transaction and multi-party payments; **Gnosis:** market analysis and trading platforms)_ **\*\***
+**Due to time constraint of the hackathon, only a prototype for face recognition system is being developed. In the future, the ledger along with all functionalities might be completed and the apps can be deployed for community usage. Currently, we plan to have a blockchain build on top of ETH and utilize their existing ecosystem (**Golem:** utilizing, scaling up computing system; **Raiden:** transaction and multi-party payments; **Gnosis:** market analysis and trading platforms)**
 
 ### <span style="color:#2AB7B4"> c. Functions and requirements:
   1. **An effective in-device machine-learning algorithm** that can accurately identify users by faceID, while in the meantime, keeping all data secure.
