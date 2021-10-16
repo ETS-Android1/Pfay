@@ -72,11 +72,12 @@ At the very beginning, the server randomly initializes an item matrix, which con
 
 The Digital Payments Market is moderately concentrated. The competitive rivalry in the market studied is moderate, as a good number of players prevail. Despite the existence of several companies in the market studied, firms are required to keep innovating their products, in order to gain a sustainable competitive edge over their rivals and provide product differentiation.
 
-In addition, here are many predecessors in the digital payment industry, with large-scale investment and funding for a variety of projects. To name a few competitors:
+In addition, there are many giant in the digital payment industry, with large-scale investment and funding for a variety of projects. To a few:
 
-- Google Pay
-- Visa 
-- Paypal
+- **Google Pay:** Soon to have crypto integration, established cloud platform
+- **Visa:** UPC (Universal Payment Channel) project announced last month - an unified crypto ledger project, enables interoperability between different digital currencies such as CBDCs and private stablecoins.
+- **Paypal:** Mature digital payment infrasructure, integrated with blockchain recently
+
 
 However, we believe our approach would benefit from the rapid development of the blockchain sector as well as machine learning technologies. Besides, though biometrics authentication is widely applied, the idea of paying by using biometrics ID on blockchain is relatively new and exciting.
  
