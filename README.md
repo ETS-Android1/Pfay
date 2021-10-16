@@ -14,7 +14,6 @@ So our solution is to implement a blockchain ledger integrated with a biometric 
 
 # <span style="color:#4F5CBE"> 2. Solution and advantages:
 
-
 ### <span style="color:#2AB7B4"> a. Blockchain ledger with biometrics authentication, ease of use:
 
 Thanks to recent advances in machine learning detection algorithms and the sensor industry, biometrics authentication is gaining widespread popularity for being both secure and cost-effective (according to a Visa survey, two-thirds of Europeans want to use biometrics as a method of payment authentication).
