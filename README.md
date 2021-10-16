@@ -26,7 +26,7 @@ In our setting, the metric is FaceID. It is considered highly secure and when in
 
   **Model Architecture:** Face  Net with MTCNN for input processing:
 
-  <p align="center"> <img src="images/FaceNet.png"> </p> 
+  <p align="center"> <img src="images/facenet.png"> </p> 
   <p align="center"> Input &rarr; FaceNET &rarr; embedded feature vectors </p>
 FaceNet is a face recognition system developed by Google, it achieved state of the art result on multiple dataset. The network take an image of the person’s face as input and outputs a embedded features vector. This is then being used to compare with other embedded vector to measure the similarity between 2 faces. We use this as our model for face authentication.
 
