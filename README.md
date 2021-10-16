@@ -1,5 +1,5 @@
-<p align = "center"> <img src="images/logo.png"> </p>
-# <p align="center"> **PFAY: Decentralized biometric payment system**
+ <p align = "center"> <img src="images/logo.png"> </p>
+# <p align="center"> PFAY: Decentralized biometric payment system
 
 # <span style="color:#4F5CBE"> 1. Problem statement:
 
