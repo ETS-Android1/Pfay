@@ -144,7 +144,7 @@ static {
         final Button buttonLive = findViewById(R.id.liveButton);
         buttonLive.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-              final Intent intent = new Intent(MainActivity.this, ObjectDetectionActivity.class);
+              final Intent intent = new Intent(MainActivity.this, CameraActivity.class);
               startActivity(intent);
             }
         });

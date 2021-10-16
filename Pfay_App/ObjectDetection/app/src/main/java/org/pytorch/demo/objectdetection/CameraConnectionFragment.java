@@ -1,4 +1,4 @@
-package org.pytorch.demo.objectdetection.imageclassificationlivefeed;
+package org.pytorch.demo.objectdetection;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -41,8 +41,6 @@ import android.widget.Toast;
 
 import androidx.annotation.RequiresApi;
 import androidx.core.app.ActivityCompat;
-
-import org.pytorch.demo.objectdetection.R;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -110,7 +108,7 @@ public class CameraConnectionFragment extends Fragment {
             };
 
     private String cameraId;
-    private com.example.imageclassificationlivefeed.AutoFitTextureView textureView;
+    private AutoFitTextureView textureView;
     private CameraCaptureSession captureSession;
     private CameraDevice cameraDevice;
     private Integer sensorOrientation;
@@ -263,7 +261,7 @@ public class CameraConnectionFragment extends Fragment {
 
     @Override
     public void onViewCreated(final View view, final Bundle savedInstanceState) {
-        textureView = (com.example.imageclassificationlivefeed.AutoFitTextureView) view.findViewById(R.id.texture);
+        textureView = (AutoFitTextureView) view.findViewById(R.id.texture);
     }
 
     @Override

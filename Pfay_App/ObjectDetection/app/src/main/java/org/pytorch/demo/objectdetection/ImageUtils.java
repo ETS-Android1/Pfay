@@ -1,4 +1,4 @@
-package com.example.imageclassificationlivefeed;
+package org.pytorch.demo.objectdetection;
 
 import android.graphics.Bitmap;
 import android.os.Environment;

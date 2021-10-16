@@ -17,6 +17,7 @@ import android.os.Handler;
 import android.util.Size;
 import android.view.Surface;
 
+import org.pytorch.demo.objectdetection.CameraConnectionFragment;
 import org.pytorch.demo.objectdetection.R;
 
 
@@ -65,9 +66,9 @@ public class CameraPreview extends AppCompatActivity implements ImageReader.OnIm
         }
 
         Fragment fragment;
-        org.pytorch.demo.objectdetection.imageclassificationlivefeed.CameraConnectionFragment camera2Fragment =
-                org.pytorch.demo.objectdetection.imageclassificationlivefeed.CameraConnectionFragment.newInstance(
-                        new org.pytorch.demo.objectdetection.imageclassificationlivefeed.CameraConnectionFragment.ConnectionCallback() {
+        CameraConnectionFragment camera2Fragment =
+                CameraConnectionFragment.newInstance(
+                        new CameraConnectionFragment.ConnectionCallback() {
                             @Override
                             public void onPreviewSizeChosen(final Size size, final int rotation) {
                                 previewHeight = size.getHeight();

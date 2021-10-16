@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.imageclassificationlivefeed;
+package org.pytorch.demo.objectdetection;
 
 import android.content.Context;
 import android.util.AttributeSet;

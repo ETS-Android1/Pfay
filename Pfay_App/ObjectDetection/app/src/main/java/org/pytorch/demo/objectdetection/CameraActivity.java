@@ -1,4 +1,4 @@
-package com.example.imageclassificationlivefeed;
+package org.pytorch.demo.objectdetection;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
@@ -15,20 +15,13 @@ import android.media.Image;
 import android.media.ImageReader;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Handler;
 import android.util.Log;
 import android.util.Size;
 import android.view.Surface;
-import android.widget.ListView;
-import android.widget.TextView;
 
-import org.pytorch.demo.objectdetection.R;
-
-import java.io.IOException;
 import java.nio.ByteBuffer;
-import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements ImageReader.OnImageAvailableListener{
+public class CameraActivity extends AppCompatActivity implements ImageReader.OnImageAvailableListener{
 
 
     private int sensorOrientation;
@@ -41,6 +34,7 @@ public class MainActivity extends AppCompatActivity implements ImageReader.OnIma
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             ActivityCompat.requestPermissions(this, new String[]{
                     Manifest.permission.CAMERA}, 121);
+
         } else {
             //TODO show live camera footage
             setFragment();
@@ -71,9 +65,9 @@ public class MainActivity extends AppCompatActivity implements ImageReader.OnIma
             e.printStackTrace();
         }
         Fragment fragment;
-        org.pytorch.demo.objectdetection.imageclassificationlivefeed.CameraConnectionFragment camera2Fragment =
-                org.pytorch.demo.objectdetection.imageclassificationlivefeed.CameraConnectionFragment.newInstance(
-                        new org.pytorch.demo.objectdetection.imageclassificationlivefeed.CameraConnectionFragment.ConnectionCallback() {
+        CameraConnectionFragment camera2Fragment =
+                CameraConnectionFragment.newInstance(
+                        new CameraConnectionFragment.ConnectionCallback() {
                             @Override
                             public void onPreviewSizeChosen(final Size size, final int rotation) {
                                 previewHeight = size.getHeight();
@@ -131,7 +125,7 @@ public class MainActivity extends AppCompatActivity implements ImageReader.OnIma
                     new Runnable() {
                         @Override
                         public void run() {
-                            com.example.imageclassificationlivefeed.ImageUtils.convertYUV420ToARGB8888(
+                            ImageUtils.convertYUV420ToARGB8888(
                                     yuvBytes[0],
                                     yuvBytes[1],
                                     yuvBytes[2],
