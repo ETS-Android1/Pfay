@@ -47,9 +47,9 @@ Once the privatized updates reach the proxy network, these are stripped of their
 **&nbsp;&nbsp;&nbsp; Server: <br>**
 At the very beginning, the server randomly initializes an item matrix, which constitutes the global part of the shared model. This is shipped to all the clients to initiate the federated learning process in epoch 0. At each epoch, once enough privatized gradient updates reach the server, they are aggregated together to reconstruct a global item matrix update ∇V. This is used to compute an updated item matrix V′, which is then shipped to each client to initiate the next federated learning epoch.
 
-  **ii. Model Architecture:** FaceNet with MTCNN for input processing: Input &rarr; MTCNN &rarr; FaceNET &rarr; 512 features output vector.
+  **ii. Model Architecture:<br>** FaceNet with MTCNN for input processing: Input &rarr; MTCNN &rarr; FaceNET &rarr; 512 features output vector.
 
-  **iii. The blockchain ledger:** Refer to future development. Plan to use existing resources in ETH&#39;s ecosystem. <br>
+  **iii. The blockchain ledger:<br>** Refer to future development. Plan to use existing resources in ETH&#39;s ecosystem. <br>
 ** *Due to time constraint of the hackathon, only a prototype for face recognition system is being developed. In the future, the ledger along with all functionalities might be completed and the apps can be deployed for community usage. Currently, we plan to have a blockchain build on top of Ethereum and utilize their existing ecosystem (**Golem:** utilizing, scaling up computing system; **Raiden:** transaction and multi-party payments; **Gnosis:** market analysis and trading platforms)* **
 
 ### <span style="color:#2AB7B4"> c. Functions and requirements:
