@@ -1,11 +1,11 @@
-package org.pytorch.demo.objectdetection.ui.login;
+package pfaymain.ui.login;
 
 import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.annotation.NonNull;
 
-import org.pytorch.demo.objectdetection.data.LoginDataSource;
-import org.pytorch.demo.objectdetection.data.LoginRepository;
+import pfaymain.data.LoginDataSource;
+import pfaymain.data.LoginRepository;
 
 /**
  * ViewModel provider factory to instantiate LoginViewModel.

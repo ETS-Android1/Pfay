@@ -1,25 +1,15 @@
-package org.pytorch.demo.objectdetection.ui.login;
-
-import static androidx.core.content.ContextCompat.startActivity;
-
-import androidx.appcompat.app.AppCompatActivity;
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.EditText;
+package pfaymain.ui.login;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import android.content.Intent;
 import android.util.Patterns;
 
-import org.pytorch.demo.objectdetection.MainActivity;
-import org.pytorch.demo.objectdetection.data.LoginRepository;
-import org.pytorch.demo.objectdetection.data.Result;
-import org.pytorch.demo.objectdetection.data.model.LoggedInUser;
-import org.pytorch.demo.objectdetection.R;
+import pfaymain.data.LoginRepository;
+import pfaymain.data.Result;
+import pfaymain.data.model.LoggedInUser;
+import pfaymain.R;
 
 public class LoginViewModel extends ViewModel {
 

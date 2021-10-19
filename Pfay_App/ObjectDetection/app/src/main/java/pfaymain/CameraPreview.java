@@ -17,8 +17,8 @@ import android.os.Handler;
 import android.util.Size;
 import android.view.Surface;
 
-import org.pytorch.demo.objectdetection.CameraConnectionFragment;
-import org.pytorch.demo.objectdetection.R;
+import pfaymain.CameraConnectionFragment;
+import pfaymain.R;
 
 
 public class CameraPreview extends AppCompatActivity implements ImageReader.OnImageAvailableListener {

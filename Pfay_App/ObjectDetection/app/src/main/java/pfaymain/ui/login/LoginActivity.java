@@ -1,6 +1,4 @@
-package org.pytorch.demo.objectdetection.ui.login;
-
-import static androidx.core.content.ContextCompat.startActivity;
+package pfaymain.ui.login;
 
 import android.app.Activity;
 
@@ -25,11 +23,9 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.pytorch.demo.objectdetection.MainActivity;
-import org.pytorch.demo.objectdetection.R;
-import org.pytorch.demo.objectdetection.ui.login.LoginViewModel;
-import org.pytorch.demo.objectdetection.ui.login.LoginViewModelFactory;
-import org.pytorch.demo.objectdetection.databinding.ActivityLoginBinding;
+import pfaymain.MainActivity;
+import pfaymain.R;
+import pfaymain.databinding.ActivityLoginBinding;
 
 public class LoginActivity extends AppCompatActivity {
 

@@ -1,6 +1,6 @@
-package org.pytorch.demo.objectdetection.data;
+package pfaymain.data;
 
-import org.pytorch.demo.objectdetection.data.model.LoggedInUser;
+import pfaymain.data.model.LoggedInUser;
 
 import java.io.IOException;
 

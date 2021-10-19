@@ -1,4 +1,4 @@
-package org.pytorch.demo.objectdetection.data.model;
+package pfaymain.data.model;
 
 /**
  * Data class that captures user information for logged in users retrieved from LoginRepository

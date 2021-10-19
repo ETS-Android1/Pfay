@@ -1,4 +1,4 @@
-package org.pytorch.demo.objectdetection.ui.login;
+package pfaymain.ui.login;
 
 /**
  * Class exposing authenticated user details to the UI.

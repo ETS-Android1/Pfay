@@ -1,6 +1,6 @@
-package org.pytorch.demo.objectdetection.data;
+package pfaymain.data;
 
-import org.pytorch.demo.objectdetection.data.model.LoggedInUser;
+import pfaymain.data.model.LoggedInUser;
 
 /**
  * Class that requests authentication and user information from the remote data source and

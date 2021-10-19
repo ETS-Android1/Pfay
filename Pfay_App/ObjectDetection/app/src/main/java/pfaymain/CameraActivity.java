@@ -1,4 +1,4 @@
-package org.pytorch.demo.objectdetection;
+package pfaymain;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;

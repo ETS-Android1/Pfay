@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.pytorch.demo.objectdetection;
+package pfaymain;
 
 import android.content.Context;
 import android.util.AttributeSet;

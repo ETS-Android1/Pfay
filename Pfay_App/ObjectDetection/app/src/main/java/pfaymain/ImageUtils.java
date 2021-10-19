@@ -1,4 +1,4 @@
-package org.pytorch.demo.objectdetection;
+package pfaymain;
 
 import android.graphics.Bitmap;
 import android.os.Environment;

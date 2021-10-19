@@ -1,4 +1,4 @@
-package org.pytorch.demo.objectdetection;
+package pfaymain;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
